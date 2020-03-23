@@ -1,12 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+	<title>Shirts and Stuff Store</title>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>   -->
+	<!--Internal link to js/jquery file -->
+	<script type="text/javascript" src="jquery.js"></script>
 </head>
 <body>
-    
+	<div id="wrapper">
+		<header>
+			<h1><a href="#">Shirts and Stuff Store</a></h1>
+		</header>
+		
+			<ul id="main-nav-ul">
+				<li class ="dropdown"><a class="dropbtn" href="#">NEW STUFF</a>
+				    <div class="dropdown-content">
+				    	<a href="#">Hawaiian shirts</a>
+				        <a href="#">T shirts</a>
+				        <a href="#">Sunglasses</a>
+				    </div>
+				</li>
+				<li class ="dropdown"><a class="dropbtn" href="#">BUY STUFF</a>
+				  	<div class="dropdown-content">
+				        <a href="#">Clothing</a>
+				        <a href="#">Sunglasses</a>
+				        <a href="#">Grilling</a>
+				        <a href="#">Lawn gnomes</a>
+				    </div>
+			  <li>
+			  	<a href="#">ABOUT US</a>
+			  	<a href="#">CONTACT US</a>
+			  	<a href="#">F.A.Q.</a>
+			  </li>
+			  <form id="search_bar">
+				<input class="search" type="text" style="margin-right: 25px;" placeholder="SEARCH STUFF" required>
+			</form>
+			</ul>
+			
+		</div>
+		<div id="main_body_of_page">
+			<section id="product_area">
+				<div id="main-shirts">
+					<a href="#"><img class="sections-img" src="img/shirts.jpg"></a>
+				</div>
+				<div id="main-gnomes">
+					<a href="#"><img class="sections-img" src="img/gnome.jpg"></a>
+				</div>
+				<div id="main-grilling">
+					<a href="#"><img class="sections-img" src="img/grilling.jpg"></a>
+				</div>
+				<div class ="text_for_catz">
+					<a href="#"><h2>SHIRTS</h2></a>
+				</div>
+				<div class ="text_for_catz">
+					<a href="#"><h2>LAWN GNOMES</h2></a>
+				</div>
+				<div class ="text_for_catz">
+					<a href="#"><h2>GRILLING</h2></a>
+				</div>
+				<div id="main-suits">
+					<a href="#"><img class="sections-img" src="img/suits.jpg"></a>
+				</div>
+				<div id="main-moreshirts">
+					<a href="#"><img class="sections-img" src="img/moreshirts.jpg"></a>
+				</div>
+				<div id="main-otherstuff">
+					<a href="#"><img class="sections-img" src="img/goggles.jpg"></a>
+				</div>
+				<div class ="text_for_catz">
+					<a href="#"><h2>SUITS</h2></a>
+				</div>
+				<div class ="text_for_catz">
+					<a href="#"><h2>MORE SHIRTS</h2></a>
+				</div>
+				<div class ="text_for_catz">
+					<a href="#"><h2>OTHER STUFF</h2></a>
+				</div>
+			</section>
+			<section id="mailing_and_new">	
+				<div id="mailing-list">
+					<p>Sign up here for exclusive email updates about shirts and stuff from Shirts and Stuff INC.</p>
+					
+					 <div class="input">
+		        		<input type="text" class="button" id="email"placeholder="your@email.com">
+		        		<!-- <input type="submit" class="button" id="submit" value="SIGN UP"> -->
+		        		<button id="submit" >SUBMIT</button> 
+		      		</div>
+		      		<div class ="hidden" id="thankEmailMessage">
+		      			<p>Thank you for signing up for our mailing list!</p>
+		      		</div>
+	      		</div>
+
+			</section>
+		</div>
+			<footer id="footer">
+				<p class="footer-text-1">
+					<a href="#">Careers</a> - <a href="#">Privacy Policy</a> - <a href="#">Return Policy</a> - <a href="#">Store Locator</a> - <a href="#">Contact</a> 
+				</p>
+				<p class="footer-text-2"> &copy; 2021 Shirts and Other Things CO. DBA Shirts and Stuff Store. All rights reserved.
+				</p>
+			</footer>
+
+	</div>
 </body>
 </html>
